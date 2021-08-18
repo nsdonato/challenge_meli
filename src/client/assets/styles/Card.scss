@@ -1,0 +1,43 @@
+@import 'variables';
+
+.card {
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+
+  &__img {
+    width: $img-thumb-width;
+    height: $img-thumb-height;
+    border-radius: $img-border-radius;
+    margin: $margin-16;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &-information {
+    width: 60%;
+    margin-top: $margin-16;
+  }
+
+  &-information__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &-information__price_text--size-24 {
+    font-size: $font-size-24;
+  }
+
+  &-information__location_text--size-12 {
+    font-size: $font-size-12;
+  }
+
+  &-information__description_text--size-18 {
+    font-size: $font-size-18;
+    padding-top: $padding-32;
+  }
+}

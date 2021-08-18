@@ -1,0 +1,88 @@
+{
+  "name": "challengeml",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/register": "^7.11.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "asset-require-hook": "^1.2.0",
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
+    "ignore-styles": "^5.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hot-loader": "^4.12.21",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.36.0",
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.44.1",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "set DEBUG=:*& nodemon ./src/server/index",
+    "start": "set NODE_ENV=production& node ./src/server/index",
+    "start:dev": "set NODE_ENV=development& node ./src/server/index",
+    "test": "jest --coverage"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/setupTests.js"
+    },
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect",
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "axios-mock-adapter": "^1.19.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^5.0.2",
+    "css-loader": "^4.2.2",
+    "file-loader": "^5.1.0",
+    "jest-css-modules": "^2.1.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1",
+    "sass-loader": "^10.0.2",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.8.0"
+  }
+}

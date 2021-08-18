@@ -1,0 +1,12 @@
+@import "variables";
+
+.app-container {
+  margin-bottom: 10px;
+  background-color: $light-gray;
+
+  &__layout {
+    width: 80%;
+    margin: auto;
+    margin-bottom: $margin-16;
+  }
+}

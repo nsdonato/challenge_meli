@@ -1,0 +1,62 @@
+@import 'variables';
+
+.product-container {
+  display: flex;
+  background-color: $white;
+  padding-left: $padding-32;
+
+  &__information {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    img {
+      width: $img-full-card;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: $font-size-28;
+      padding-top: $padding-32;
+      padding-bottom: $padding-32;
+    }
+
+    p {
+      font-size: $font-size-16;
+      padding-bottom: $padding-32;
+    }
+  }
+
+  &__resume {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    &-sales {
+      font-size: $font-size-14;
+      padding-top: $padding-32;
+      margin-bottom: $margin-16;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: $font-size-24;
+      padding-bottom: $padding-32;
+    }
+
+    &-price_text--size-46 {
+      font-size: $font-size-46;
+      padding-bottom: $padding-32;
+    }
+
+    button {
+      background-color: $blue;
+      color: $white;
+      width: 90%;
+      border: none;
+      padding: 16px $padding-32 16px 25px;
+    }
+  }
+}

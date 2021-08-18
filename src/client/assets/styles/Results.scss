@@ -1,0 +1,8 @@
+@import "variables";
+
+.results-container {
+  &__cards {
+    background-color: $white;
+    border-bottom: 1px solid $light-gray;
+  }
+}

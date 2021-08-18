@@ -1,0 +1,31 @@
+@import 'variables';
+
+.breadcrumb {
+  color: $dark-gray;
+  font-size: $font-size-14;
+  line-height: 1em;
+  padding: 16px 0;
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+
+  &__category {
+    &_symbol {
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid $dark-gray;
+      border-right: 1px solid $dark-gray;
+      transform: rotate(45deg);
+      margin-right: 5px;
+      margin: 0px 5px;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
